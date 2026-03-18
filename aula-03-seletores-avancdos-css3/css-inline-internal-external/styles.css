@@ -1,0 +1,58 @@
+/* CSS Extrnal */
+/* Estilos Universais */
+*{
+    margin:0;
+    padding: 0;
+}
+/*Estilos gerais*/
+body{
+    font-family: arial;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding:20px;
+    line-height: 1.6;
+}
+.destaque{
+    background-color: yellow;
+    color: blueviolet;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff6347;
+    font-weight: bold;
+}
+/*Seletores Avançados*/
+.box{
+    width: 530px;
+    background-color: #3a3a28;
+    padding:30px;
+    text-align:center;
+    border: 2px dashed #8cc9e4;
+    border-radius: 8px;
+    margin: 20px;
+    transition: all 0.3s ease;
+
+/* Muda o formato do cursor */
+    cursor:pointer;
+}
+
+/* Função executada ao passar o mouse por cima */
+.box:hover{
+  background-color: aqua;
+  color:rgb(27, 53, 2);
+
+  /* Muda escala */
+  transform:scale(0.8)
+}
+.btn-download{
+    background-color: rgb(5, 214, 64);
+    color: white;
+    padding:15px 30x;
+    border:none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor:pointer;
+    transition: background-color 1s ease;
+}
+.btn-download:hover{
+    background-color: #2f7533;
+}
