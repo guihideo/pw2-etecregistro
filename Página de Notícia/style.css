@@ -1,0 +1,80 @@
+/*<a href="#"><h6 class="p-categoria">Animes<h6></a>*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: "Playfair Display", serif;
+    color: #d2effa;
+    line-height: 1.6;
+    background-color: black;
+}
+hr{
+    height: 1px;
+    border: none;
+    background-color: #f0f87d;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    color: rgb(0, 255, 221);
+    transform: scale(1.2);
+}
+header{
+    height: 100%;
+    background-color: rgb(4, 5, 46);
+    color: rgb(140, 197, 211);
+    text-align: center;
+    padding: 30px;
+}
+header h1{
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+nav{
+    padding: 10px;
+    background-color: rgb(12, 9, 39);
+}
+nav ul{
+    list-style: none;
+    text-align: center;
+    
+}
+nav li{
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline;
+    margin: 0 15px;
+    font-weight: bold;
+    
+}
+nav ul li a{
+    font-weight: bold;
+}
+.img-lateral{
+    height: 8em;
+    width: 14.2em;
+    float: left;
+    margin: 0 0 10px 20px;
+    border-radius: 8px;
+}
+article{
+    background-color: rgb(3, 21, 59);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #1e88e5;
+    height: 8em;
+    width: 65%;
+}
+.p1{
+    padding-top: 10px;
+}
+article img{
+    padding-right: 10px ;
+}
+  
