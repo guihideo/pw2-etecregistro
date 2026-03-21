@@ -1,10 +1,8 @@
-/*<a href="#"><h6 class="p-categoria">Animes<h6></a>*/
 *{
     margin:0;
     padding:0;
 }
 body{
-    /* font-family: "Playfair Display", serif; */
     font-family: Arial;
     color: #d2effa;
     line-height: 1.6;
@@ -28,7 +26,7 @@ a:hover{
 header{
     height: 100%;
     background-color: rgb(4, 5, 46);
-    color: rgb(140, 197, 211);
+    color: rgb(216, 224, 105);
     text-align: center;
     padding: 30px;
 }
@@ -57,13 +55,36 @@ nav li{
 nav ul li a{
     font-weight: bold;    
     transition: all 0.3s ease;
+    display: inline-block;
+}
+.img-head{
+    display: block;
+    margin: 10 auto;
+    width:100%;
+}
+ main{ 
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+main section{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+section{
+    margin-bottom: 20px;
+}
+#conteudo{
+    width: 70%;
 }
 .img-lateral{
-    height: 8em;
-    width: 14.2em;
+    height: 100px;
+    width: 160px;
     float: left;
-    margin: 0 0 10px 20px;
+    margin: 0 10px 10px 0;
     border-radius: 8px;
+
 }
 article{
     background-color: rgb(3, 21, 59);
@@ -71,13 +92,37 @@ article{
     padding: 15px;
     margin-bottom: 15px;
     border-left: 5px solid #1e88e5;
-    height: 8em;
-    width: 65%;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
 }
 .p1{
     padding-top: 10px;
 }
 article img{
     padding-right: 10px ;
+}
+aside{
+   width: 20%;
+
+}
+.lateral{
+    padding: 20px;
+    background:black;
+    color:white ;
+}
+aside img{
+    margin: 0 10px 10px 0;
+} 
+.data{
+    color:gray;
+}
+footer{
+    background-color: rgb(12, 9, 39);
+    padding:10px;
+}
+
+#titulo{
+    color: rgb(216, 224, 105);
 }
   
