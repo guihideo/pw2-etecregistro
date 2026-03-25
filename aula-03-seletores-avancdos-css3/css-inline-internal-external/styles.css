@@ -35,7 +35,7 @@ body{
     cursor:pointer;
 }
 
-/* Função executada ao passar o mouse por cima */
+/* :hover -> Função executada ao passar o mouse por cima */
 .box:hover{
   background-color: aqua;
   color:rgb(27, 53, 2);
@@ -55,4 +55,62 @@ body{
 }
 .btn-download:hover{
     background-color: #2f7533;
+}
+#centro{
+    text-align: center;
+}
+/* Formatando inputs de formulário */
+input{
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 2px solid  #555;
+    border-radius: 5px;
+    background-color: #1a3a38;
+    color: #ffffff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-shadow: 0.3s ease;
+}
+/* :focus -> Função acionada ao selecionar */
+input:focus{
+    outline:none;
+    border-color: #8cc9e4;
+    box-shadow:0 0 15px #0384c0;
+
+}
+/* Selecionando input pelo seu tipo */
+input[type="password"]{
+    border-color: #ff0000;
+    color: #000000;
+}
+
+/* Citações personalida com ::before ::after */
+.citacao{
+    width: 720px;
+    position: reltive;
+    padding: 30px 40px;
+    background-color: #1a3a38;
+    border-left: 5px solid #8cc9e4;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.citacao::before{
+    content: '"' ;
+    position: absolute;
+    bottom: -40px;
+    right: 90px;
+    font-size: 80px;
+    color: #8cc9e4;
+    opacity: 0.3;
+}
+.citacao::after{
+    content: '"' ;
+    position: absolute;
+    bottom: -40px;
+    right: 90px;
+    font-size: 80px;
+    color: #8cc9e4;
+    opacity: 0.3;
 }
