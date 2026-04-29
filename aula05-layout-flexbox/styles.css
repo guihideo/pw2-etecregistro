@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    /* gap: 50px;
+    /*gap => espaçamento dos itens na flexbox*/
+    /*  justify-content: center;
+    /*justify-content => alinhando itens na horizontal : eixo x*/
+    background-color: #30302a;
+    padding: 20px;
+    height: 20%;
+}
+
+.card{
+    background-color: #8cc9e4;
+    color: #39392a;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.row-center{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-left{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.row-center{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.linha-espacada{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap{
+    flex-direction: row; /*Ativa a quebra de linha*/
+    flex-wrap: wrap;
+    align-items: center;
+}
