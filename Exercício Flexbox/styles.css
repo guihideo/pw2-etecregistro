@@ -1,8 +1,55 @@
 body{
-    background-color:rgb(55, 55, 134);
-    color:aliceblue;
+    background-color: rgb(15, 15, 114);
+    color:white;
 }
+
+h1{
+    text-align: center;
+}
+
 .container{
     display: flex;
-    background-color: royalblue;
+    background-color: #1a1a1a;
+    padding: 20px;
+    height: 300px;
+}
+
+.card{
+    background-color: darkcyan;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-weight:bold;
+}
+
+.row-right-end{
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.column-center-space-between{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-right-start{
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+}
+
+.column-center{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-center-start{
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 }
