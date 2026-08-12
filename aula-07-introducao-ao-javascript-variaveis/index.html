@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Introdução ao JavaScript</h1>
+    <p>Eu sou...</p>
+  </body>
+
+  <!--JAVASCRIPT INTERNAL-->
+  <script>
+    //Aqui virá o código JavaScript
+
+    // //Declarando variáveis
+    // var nome = "Guilherme";
+    // document.write(nome);
+    // document.write("</br>");
+    //SOLICITANDO DADOS AO USUÁRIO
+    nome = window.prompt("Digite seu nome: ");
+    document.write(nome);
+
+    let cidade = window.prompt("Digite sua cidade: ");
+    // let cidade = "São Paulo";
+    // // let cidade = "Pariquera" nãop possível
+    // cidade = "Registro";
+    document.write("</br>");
+    document.write("Eu moro em " + cidade + "</br>");
+
+    //const ~ constante
+    const idade = Number(window.prompt("Digite sua idade: ")); //DETERMINA O TIPO DO DADO A SER INSERIDO
+
+    document.write("Eu tenho " + idade + " anos! </br>");
+
+    //VERIFICANDO O TIPO DAS VARIÁVEIS
+    document.write("O tipo da variável nome é " + typeof nome);
+    document.write("<br> O tipo da variável idade é " + typeof idade);
+    //O JAVASCRIPT ATRIBUI OS TIPOS ÀS VARIÁVEIS DE FORMA DINÂMICA
+
+    //EXIBINDO UMA MENSAGEM DE ALERTA AO USUÁRIO
+    window.alert("Bem-vindo " + nome + "!");
+
+    //SOLICITANDO AO USUÁRIO DOIS NÚMEROS
+
+    const n1 = Number(window.prompt("Digite um número: "));
+    const n2 = Number(window.prompt("Digite outro número: "));
+    const soma = n1 + n2;
+    // document.write("<br>O resultado da soma é " + soma);
+    // document.write(
+    //   "<br>O resultado da soma de" + n1 + " + " + n2 + " é " + soma,
+    // );
+    //TEMPLATE STRING
+    // //PLACEHOLDER => ${}
+    // document.write(`<br> O resultado da soma de ${n1} + ${n2} é ${soma}`);
+    document.write(`<br> O resultado da soma é ${n1 + n2}`);
+
+
+    //FORMATANDO STRING
+    //TRANSFORMA LETRAS EM MAIÚSCULAS
+    document.write(
+      `<br> Seu nome em letras maiúsculas é ${nome.toUpperCase()}`,
+    ); 
+     //TRANSFORMA LETRAS EM MINÚSCULAS
+    document.write(
+      `<br> Seu nome em letras minúsculas é ${nome.toLowerCase()}`,
+    );
+
+
+    //FORMATAÇÃO DE NÚMEROS
+    const salario = 2500;
+    //FIXA QUANTAS CASAS DECIMAIS APARECER DEPOIS DO PONTO
+    document.write(`<br> Salário ${salario.toFixed(2)}`); 
+   
+   //FIXA QUANTAS CASAS DECIMAIS APARECER DEPOIS DA VÍRGULA
+    document.write(`<br> Salário com casa decimal em vírgula: ${salario.toFixed(2).replace("." , ",")}`);
+    
+    //FORMATAÇÃO DE MOEDA
+    document.write(`<br>Salário em real: ${salario.toLocaleString('pt-br',{style:'currency', currency: 'BRL'})}`);
+    //DÒLAR
+    const salarioDolar = salario * 0.19;
+    document.write(`<br>Salário em dólar: ${salarioDolar.toLocaleString('pt-br',{style:'currency', currency: 'USD'})}`);
+
+  </script>
+</html>
