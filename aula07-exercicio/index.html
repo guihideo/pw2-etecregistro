@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+</head>
+
+<body>
+    <h1>SOBRE VOCÊ: </h1>
+</body>
+
+<script>
+
+    const nome = window.prompt("Digite seu nome: ");
+    let cidade = window.prompt("Digite o nome de sua cidade: ");
+    let nascimento = Number(window.prompt("Digite seu ano de nascimento: "));
+    let atual = Number(window.prompt("Digite o ano atual: "));
+    let salario = window.prompt("Digite seu salário atual: ");
+    
+    document.write(` <br> Seu nome é ${nome}.`);
+    document.write(` <br> Sua idade é ${atual - nascimento}`);
+    document.write(` <br> Sua cidade é ${cidade.toUpperCase()}`);
+    const salarioDolar = salario * 0.19;
+    document.write(`<br>Salário em dólar: ${salarioDolar.toLocaleString('pt-br',{style:'currency', currency: 'USD'})}`);
+</script>
+</html>
