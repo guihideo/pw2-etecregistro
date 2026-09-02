@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo com JavaScript</title>
+    <!--IMPORTANDO CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Semáforo com JavaScript</h1>
+
+    <div class="container">
+        <div class="luz" id="parar"></div> <br>
+        <div class="luz" id="atencao"></div> <br>
+        <div class="luz" id="siga"></div> <br>
+        <br>
+
+        <div>   
+            <button onClick="parar()" id="btnPare">Pare!</button>
+            <button onClick="atencao()" id="btnAtencao">Atenção!</button>
+            <button onClick="siga()" id="btnSiga">Siga!</button>
+        </div>
+
+    </div>
+
+    <!--IMPORTANDO JAVASCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>
