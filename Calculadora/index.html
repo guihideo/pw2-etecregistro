@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora com JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora com JavaScript</h1>
+        
+        <div class="input-grid">
+            <input type="number" name="n1" id="n1" placeholder="Inserir primeiro número...">
+            <input type="number" name="n2" id="n2" placeholder="Inserir segundo número...">
+        </div>
+
+        <div class="botoes">
+            <input type="button" value="+" name="soma" id="soma" onclick="somar()" class="botao">
+            <input type="button" value="-" name="subtracao" id="subtracao" onclick="subtrair()" class="botao">
+            <input type="button" value="x" name="multiplicacao" id="multiplicacao" onclick="multiplicar()" class="botao">
+            <input type="button" value="÷" name="divisao" id="divisao" onclick="dividir()" class="botao">
+            <input type="button" value="LIMPAR" name="limpar" id="limpar" onclick="limpar()" class="botao">
+        </div>
+
+        <div id="resultado">...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
