@@ -79,7 +79,55 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
         </div>
 
+        <!-- FORMULÁRIO DE CONTATO -->
+         <section class="mb-5">
+            <h3 class="mb-3 border-bottom pb-2">Entre em Contatos</h3>
+            <form>
+
+                <!--Nome-->
+                <div class="mb-3">
+                    <label for="nomeInput" class="form-label">Nome Completo:</label>
+                    <input type="text" class="form-control" id="nomeInput" placeholder="Digite seu nome...">
+                </div>
+
+                <!--E-mail-->
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Digite seu e-mail...">
+                </div>
+
+                <!--Mensagem (caixa de texto)-->
+                <div class="mb-3">
+                    <label for="msgText" class="form-label">Mensagem</label>
+                    <textarea name="msgText" id="msgText" placeholder="Como podemos ajudar?" class="form-control" rows="3">
+
+                    </textarea>
+                </div>
+
+                <!-- Botão de envio (aciona o modal) -->
+                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmacaoModal">Enviar mensagem</button>
+            </form>
+         </section>
+
     </div>
+
+    <!-- MODAL DE ALERTA -->
+     <div class="modal fade" id="confirmacaoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">Confirmar envio</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Deseja realmente enviar esta mensagem para a equipe da TechNova Solutions?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secundary" data-bs-dismiss="modal">Sim, enviar</button>
+                </div>
+            </div>
+        </div>
+     </div>
 
     <!-- IMPORTAÇÃO DO JAVASCRIPT DO BOOTSTRAP -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" 
